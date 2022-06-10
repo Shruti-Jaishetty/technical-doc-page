@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <nav id="navbar">
+
+                    <header>Java Tutorial</header>
+
+
+                    <ul class="nav nav-pills nav-stacked">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Java_Overview">Java Overview</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Basic_Syntax">Basic Syntax</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Object_and_Classes">Object and Classes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Constructor">Constructor</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Basic_Data_Types">Basic Data Types</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Variable_Types">Variable TYpes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-8">
+                <main id="main-doc">
+                    <section class="main-section" id="Java_Overview">
+                        <header>Java Overview</header>
+                        <p>Java programming language was originally developed by Sun Microsystems which was initiated by
+                            James Gosling and released in 1995 as core component of Sun Microsystems' Java platform
+                            (Java 1.0 [J2SE]).</p>
+
+                        <p>The new J2 versions were renamed as Java SE, Java EE, and Java ME respectively. Java is
+                            guaranteed to be Write Once, Run Anywhere.</p>
+
+                        <ul>
+                            <li>Object Oriented − In Java, everything is an Object. Java can be easily extended since it
+                                is based on the Object model.</li>
+                            <li>Simple − Java is designed to be easy to learn. If you understand the basic concept of
+                                OOP Java, it would be easy to master.</li>
+                            <li>Secure − With Java's secure feature it enables to develop virus-free, tamper-free
+                                systems. Authentication techniques are based on public-key encryption.</li>
+                            <li>High Performance − With the use of Just-In-Time compilers, Java enables high
+                                performance.</li>
+                            <li>Distributed − Java is designed for the distributed environment of the internet.</li>
+                        </ul>
+                    </section>
+
+                    <section class="main-section" id="Basic_Syntax">
+                        <header>Basic Syntax</header>
+                        <p>When we consider a Java program, it can be defined as a collection of objects that
+                            communicate via invoking each other's methods. Let us now briefly look into what do class,
+                            object, methods, and instance variables mean.</p>
+                        <code>
+          public class MyFirstJavaProgram {<br>
+  
+     /* This is my first java program.<br>
+      * This will print 'Hello World' as the output<br>
+      */
+  
+     public static void main(String []args) {<br>
+        System.out.println("Hello World");<br>
+          // prints Hello World<br>
+     }<br>
+  }<br>
+        </code>
+                    </section>
+
+                    <section class="main-section" id="Object_and_Classes">
+                        <header>Object and Classes</header>
+                        <p>Object − Objects have states and behaviors. Example: A dog has states - color, name, breed as
+                            well as behaviors – wagging the tail, barking, eating. An object is an instance of a class..
+                        </p>
+                        <p>Class − A class can be defined as a template/blueprint that describes the behavior/state that
+                            the object of its type support.</p>
+                        <code>public class Dog {<br>
+     String breed;<br>
+     int age;<br>
+     String color;<br>
+  
+     void barking() {<br>
+     }<br>
+  
+     void hungry() {<br>
+     }<br>
+  
+     void sleeping() {<br>
+     }<br>
+  }
+        <br></code>
+                    </section>
+
+                    <section class="main-section" id="Constructor">
+                        <header>Constructor</header>
+                        <p>A constructor initializes an object when it is created. It has the same name as its class and
+                            is syntactically similar to a method. However, constructors have no explicit return type</p>
+                        <p>All classes have constructors, whether you define one or not, because Java automatically
+                            provides a default constructor that initializes all member variables to zero. However, once
+                            you define your own constructor, the default constructor is no longer used.<<br>
+                                ClassName() {<br>
+                                }<br>
+                                }
+                                <br></code>
+                    </section>
+
+                    <section class="main-section" id="Basic_Data_Types">
+                        <header>Basic Data Types</header>
+                        <p>Variables are nothing but reserved memory locations to store values. This means that when you
+                            create a variable you reserve some space in the memory.</p>
+                        <p>Based on the data type of a variable, the operating system allocates memory and decides what
+                            can be stored in the reserved memory. Therefore, by assigning different data types to
+                            variables, you can store integers, decimals, or characters in these variables.</p>
+                        <ul>There are two data types available in Java −
+                            <li>Primitive Data Types</li>
+                            <li>Reference/Object Data Types</li>
+                        </ul>
+                        <code>
+          byte a = 68;<br>
+  char a = 'A';<br>
+        </code>
+                        <code>
+          int decimal = 100;<br>
+  int octal = 0144;<br>
+  int hexa =  0x64;<br>
+        </code>
+                    </section>
+
+                    <section class="main-section" id="Variable_Types">
+                        <header>Variable Types</header>
+                        <p>A variable provides us with named storage that our programs can manipulate. Each variable in
+                            Java has a specific type, which determines the size and layout of the variable's memory; the
+                            range of values that can be stored within that memory; and the set of operations that can be
+                            applied to the variable.</p>
+
+                        <code>
+          int a, b, c;         // Declares three ints, a, b, and c.<br>
+  int a = 10, b = 10;  // Example of initialization<br>
+  byte B = 22;         // initializes a byte type variable B.<br>
+  double pi = 3.14159; // declares and assigns a value of PI.<br>
+  char a = 'a';  
+          // the char variable a iis initialized with value 'a'<br>
+        </code>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
